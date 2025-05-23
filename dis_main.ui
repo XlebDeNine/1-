@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenu {
+	background-color: #355CBD;
+	color: white;
+}
+QMenu::item::selected{
+	background-color: #355CBD;
+	color: white;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTableView" name="tableView_main">
+      <property name="styleSheet">
+       <string notr="true">background-color: #D2DFFF;</string>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QComboBox" name="cb_columns">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="le_search">
+          <property name="styleSheet">
+           <string notr="true">background-color: #D2DFFF;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_update_tableView">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+          <property name="text">
+           <string>Обновить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="but_add">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_redac">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+          <property name="text">
+           <string>Изменить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_delete">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="but_search">
+          <property name="styleSheet">
+           <string notr="true">background-color: #355CBD;
+color: white;</string>
+          </property>
+          <property name="text">
+           <string>Найти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_tables">
+    <property name="title">
+     <string>Таблицы</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>О программе</string>
+    </property>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="m_tables"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action">
+   <property name="text">
+    <string>Информация</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
